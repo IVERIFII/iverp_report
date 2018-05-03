@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include iverp_report *.css
+recursive-include iverp_report *.csv
+recursive-include iverp_report *.html
+recursive-include iverp_report *.ico
+recursive-include iverp_report *.js
+recursive-include iverp_report *.json
+recursive-include iverp_report *.md
+recursive-include iverp_report *.png
+recursive-include iverp_report *.py
+recursive-include iverp_report *.svg
+recursive-include iverp_report *.txt
+recursive-exclude iverp_report *.pyc
