@@ -4,7 +4,7 @@
 from __future__ import unicode_literals
 import frappe
 from frappe import _
-from frappe.utils import flt
+from frappe.utils import flt, cint
 
 ACTUAL = "_actual"
 PROJECTED = "_projected"
@@ -44,11 +44,18 @@ class IverpStockAvailability(object):
         data = {}
         for stock in self.get_total_stock():
             fltactualqty = flt(stock.actual_qty)
+            cintactualqty = cint(round(fltactualqty))
+
             fltprojectedqty = flt(stock.projected_qty)
+
             actualqty = stock.warehouse + ACTUAL
             projectedqty = stock.warehouse + PROJECTED
+
+            cintprojectedqty = cint(round(fltprojectedqty))
+
             totalactualqty = TOTAL + ACTUAL
             totalprojectedqty = TOTAL + PROJECTED
+
             single_data = {}
             if stock.item_code in data:
                 single_data = data[stock.item_code]
@@ -59,13 +66,13 @@ class IverpStockAvailability(object):
                 for warehouse in self.get_warehouse():
                     actual = warehouse + ACTUAL
                     projected = warehouse + PROJECTED
-                    single_data[actual] = 0.0
-                    single_data[projected] = 0.0
+                    single_data[actual] = 0
+                    single_data[projected] = 0
 
-            single_data[actualqty] += fltactualqty
-            single_data[projectedqty] += fltprojectedqty
-            single_data[totalactualqty] += fltactualqty
-            single_data[totalprojectedqty] += fltprojectedqty
+            single_data[actualqty] += cintactualqty
+            single_data[projectedqty] += cintprojectedqty
+            single_data[totalactualqty] += cintactualqty
+            single_data[totalprojectedqty] += cintprojectedqty
             data[stock.item_code] = single_data
 
         list_data = []
