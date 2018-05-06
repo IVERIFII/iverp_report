@@ -1,0 +1,33 @@
+{
+ "content": null, 
+ "creation": "2018-05-04 22:26:00.470250", 
+ "docstatus": 0, 
+ "doctype": "Page", 
+ "idx": 0, 
+ "modified": "2018-05-04 22:28:42.041353", 
+ "modified_by": "Administrator", 
+ "module": "IVERP REPORT", 
+ "name": "point-of-sale-iverp", 
+ "owner": "Administrator", 
+ "page_name": "Point of Sale-IVERP", 
+ "restrict_to_domain": "Retail", 
+ "roles": [
+  {
+   "role": "Accounts User"
+  }, 
+  {
+   "role": "Accounts Manager"
+  }, 
+  {
+   "role": "Sales User"
+  }, 
+  {
+   "role": "Sales Manager"
+  }
+ ], 
+ "script": null, 
+ "standard": "Yes", 
+ "style": null, 
+ "system_page": 0, 
+ "title": "POINT OF SALE - IVERP"
+}
