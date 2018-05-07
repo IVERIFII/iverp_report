@@ -121,3 +121,4 @@ app_license = "MIT"
 # }
 
 fixtures = ["Custom Script"]
+fixtures = ["Custom Field"]
