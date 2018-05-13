@@ -362,7 +362,7 @@
  "issingle": 0, 
  "istable": 0, 
  "max_attachments": 0, 
- "modified": "2018-05-13 10:46:11.318422", 
+ "modified": "2018-05-13 11:05:52.606787", 
  "modified_by": "Administrator", 
  "module": "IVERP REPORT", 
  "name": "IVERP_DOC_LOCATION", 
@@ -396,6 +396,6 @@
  "show_name_in_global_search": 0, 
  "sort_field": "modified", 
  "sort_order": "DESC", 
- "track_changes": 0, 
+ "track_changes": 1, 
  "track_seen": 0
 }
