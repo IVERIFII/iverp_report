@@ -50,7 +50,7 @@ app_license = "MIT"
 
 # automatically create page for each record of this doctype
 # website_generators = ["Web Page"]
-
+website_generators = ["IVERP REPORT LISTING"]
 # Installation
 # ------------
 
