@@ -12,6 +12,13 @@ def get_data():
 		    "doctype": "Sales Order",
 		    "is_report_builder": True
                 },
+                {
+                    "type": "report",
+                    "name": "Purchase Receipt Listing",
+                    "description": "Purchase Receipt Listing",
+                    "doctype": "Purchase Receipt",
+                    "is_report_builder": True
+                },
 		{
                     "type": "report",
                     "name": "Stock Availability",
